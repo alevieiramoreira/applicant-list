@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+}
+
+.bg-darkblue{
+    background-color: #013750;
+}
+
+#logo-zup{
+    height: 40px;
+    float: left;
+}
+
+#search-icon{
+    background: url() no-repeat scroll 7px 7px;
+    padding-left:30px;;
+}
+
+.no-border{
+    border: none;
+}
