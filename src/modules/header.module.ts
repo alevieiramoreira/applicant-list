@@ -10,7 +10,10 @@ import { AppHeader } from './header/components/app.header';
   imports: [
     BrowserModule
   ],
-  providers: [],
-  bootstrap: [AppHeader]
+  exports: [
+    AppHeader
+  ],
+
+  providers: []
 })
-export class AppModule { }
+export class AppHeaderModule { }

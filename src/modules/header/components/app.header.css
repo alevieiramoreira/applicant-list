@@ -1,8 +1,28 @@
-header{
-    width: 100%;
-    background-color: #013750;
+
+/* #region COMPONENTE HEADER */
+#logo-zup{
+    height: 40px;
+    float: left;
 }
 
-#logo{
-    
+#search-icon{
+    background: url() no-repeat scroll 7px 7px;
+    padding-left:30px;;
 }
+
+.no-border{
+    border: none;
+}
+
+.form-control{
+    min-width:700px;
+}
+
+::placeholder{
+    color: #013750;
+    font-weight: 400;
+    font-size: 1.2em;
+    opacity: 1;
+}
+
+/* #endregion COMPONENTE HEADER */

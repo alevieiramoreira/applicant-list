@@ -1,0 +1,18 @@
+<div class="container margin-top">
+  <table class="table cust-border text-secondary bg-white">
+    <tbody>
+      <tr *ngFor="let user of users">
+        <th scope="row"><i class="material-icons">face</i></th>
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.phone }}</td>
+        <td>{{ user.state }}</td>
+        <th scope="row">
+          <a class="material-icons cust-icon"> delete</a>
+          <a class="material-icons cust-icon"> select_all</a>
+          <a class="material-icons cust-icon"> done </a>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</div>

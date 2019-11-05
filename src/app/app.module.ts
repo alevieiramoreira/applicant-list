@@ -3,6 +3,10 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 import { AppBootstrapModule } from './app.bootstratp.module';
+import { AppHeaderModule } from 'src/modules/header.module';
+import { AppListModule } from 'src/modules/list.module';
+import { HttpClient } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -11,7 +15,14 @@ import { AppBootstrapModule } from './app.bootstratp.module';
   ],
   imports: [
     BrowserModule,
-    AppBootstrapModule
+    AppBootstrapModule,
+    AppHeaderModule,
+    AppListModule,
+    HttpClient
+  ],
+  exports: [
+    AppHeaderModule,
+    AppListModule
   ],
 
   providers: [],
