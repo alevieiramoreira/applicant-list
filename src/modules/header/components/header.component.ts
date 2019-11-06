@@ -3,10 +3,10 @@ import { HeaderService } from '../service/header.service';
 
 @Component({
   selector: 'app-header',
-  templateUrl: './app.header.html',
-  styleUrls: ['./app.header.css']
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css']
 })
-export class AppHeader {
+export class HeaderComponent {
   title = 'applicant-list';
 
   constructor(

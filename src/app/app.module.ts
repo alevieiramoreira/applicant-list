@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { AppBootstrapModule } from './app.bootstratp.module';
 import { AppHeaderModule } from 'src/modules/header.module';
 import { AppListModule } from 'src/modules/list.module';
-import { HttpClient } from '@angular/common/http';
 
 
 
@@ -17,8 +16,7 @@ import { HttpClient } from '@angular/common/http';
     BrowserModule,
     AppBootstrapModule,
     AppHeaderModule,
-    AppListModule,
-    HttpClient
+    AppListModule
   ],
   exports: [
     AppHeaderModule,

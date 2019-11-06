@@ -1,21 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppList } from './list/components/list.component';
-import { HttpClient } from 'selenium-webdriver/http';
+import { ListComponent } from './list/components/list.component';
 
 @NgModule({
   declarations: [
-    AppList
+    ListComponent
   ],
   imports: [
-    BrowserModule,
-    HttpClient
+    BrowserModule
   ],
   exports: [
-    AppList
+    ListComponent
   ],
 
-  providers: [HttpClient]
+  providers: []
 })
 export class AppListModule { }

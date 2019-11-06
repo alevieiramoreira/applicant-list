@@ -1,7 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import { ListService } from '../service/list.service';
-import { Observable } from 'rxjs';
-import { User } from './users';
 
 
 @Component({
@@ -10,21 +8,18 @@ import { User } from './users';
   styleUrls: ['./list.component.css']
 })
 
-export class AppList implements OnInit{
+export class ListComponent{
     title = 'applist';
     
-    constructor(private listService: ListService) { }
-    
-    users: Observable<User>;
+    users: any
 
-    ngOnInit(){
-        this.getAll();
+    constructor(private listService: ListService) { 
+       this.users = this.getAll();
     }
-
+     
     getAll(){
         const data = this.listService.getAll();
-        JSON.stringify(data);
-        this.users = data;
+        return data.user
     }
 }
 
