@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule  } from '@angular/common/http';
 import { ListComponent } from './list/components/list.component';
 
 @NgModule({
@@ -8,12 +8,13 @@ import { ListComponent } from './list/components/list.component';
     ListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule 
   ],
   exports: [
     ListComponent
   ],
 
-  providers: []
+  providers: [HttpClientModule ]
 })
 export class AppListModule { }

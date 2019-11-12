@@ -6,8 +6,8 @@
 }
 
 #search-icon{
-    background: url() no-repeat scroll 7px 7px;
-    padding-left:30px;;
+    background: url(/src/assets/Vector.png) no-repeat scroll 7px 7px;
+    padding-left:30px;
 }
 
 .no-border{

@@ -21,6 +21,11 @@ body{
     font-size: 48px; 
 }
 
+.material-icons:hover{
+    color: #a5c138;
+    cursor: pointer
+}
+
 ::selection { 
     background: #013750;
     color: white; 
