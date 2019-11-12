@@ -19,7 +19,7 @@
     <table class="table cust-border text-secondary bg-white">
       <tbody>
         <tr *ngFor="let user of users">
-          <th scope="row"><i class="material-icons">face</i></th>
+          <th scope="row"><img [src]="user.urlImage" alt="Foto do Usuário" class="rounded-circle" width="40px"></th>
             <td class="user-name">{{ user.name }}</td>
             <td>{{ user.email }}</td>
             <td>{{ user.phone }}</td>
